@@ -17,7 +17,14 @@ public class HelloController {
     @GetMapping("/hello") // get request
     public String sayHello()
     {
-        return "Hello World";
+        //return "Hello World";
+
+        return "Application Version 1.0";
+    }
+
+    @GetMapping("/version")
+    public String version() {
+        return "Application Version 1.0";
     }
 
 
